@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colegios Trento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Raleway:wght@600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#0061a6",
+              "trento-blue-dark": "#1A5A92",
+              "trento-blue-light": "#E9F3FC",
+              "primary": "#005ea2",
+              "primary-fixed": "#d2e4ff",
+              "primary-container": "#0077cb",
+              "on-primary": "#ffffff",
+              "background": "#f9f9f9",
+              "on-background": "#1a1c1c",
+              "surface": "#f9f9f9",
+              "surface-dim": "#dadada",
+              "surface-variant": "#e2e2e2",
+              "on-surface-variant": "#404752",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f3f3f3",
+              "surface-container": "#eeeeee",
+              "outline-variant": "#c0c7d3",
+              "secondary-fixed-dim": "#c4c6cd",
+              "inverse-surface": "#2f3131",
+              "inverse-primary": "#a0c9ff"
+            },
+            spacing: {
+              "gutter": "24px",
+              "margin-desktop": "64px",
+              "section-padding": "80px",
+              "margin-mobile": "16px"
+            },
+            fontFamily: {
+              "label-md": ["Libre Franklin"],
+              "headline-md": ["Raleway"],
+              "display-lg": ["Raleway"],
+              "body-md": ["Libre Franklin"],
+              "headline-lg": ["Raleway"],
+              "body-lg": ["Libre Franklin"],
+              "caption": ["Libre Franklin"]
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

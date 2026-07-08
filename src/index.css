@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.animate-fade-up {
+  opacity: 1; /* Lo dejamos en 1 para que se vea sin el script de JS que tenías antes */
+  transform: translateY(0);
+}
+
+.soft-shadow {
+  box-shadow: 0 4px 24px rgba(26, 90, 146, 0.06);
+}
