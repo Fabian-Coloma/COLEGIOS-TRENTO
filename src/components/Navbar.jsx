@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logoTrento from '../assets/logo.png'; // <-- Agrega esta línea
 
 export default function Navbar() {
   return (
@@ -6,14 +7,14 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-[#ACAEB1]/20 shadow-sm transition-all duration-300 font-body">
       <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-3 md:py-4 max-w-[1200px] mx-auto">
         
-        {/* Logo funcionando como botón de inicio */}
-        <Link to="/" className="shrink-0 transition-transform hover:scale-105 cursor-pointer">
-          <img 
-            alt="Colegios Trento Logo" 
-            className="h-10 md:h-12 w-auto" 
-            src="http://colegiostrento.edu.pe/wp-content/uploads/2020/09/logo.png" 
-          />
-        </Link>
+{/* Logo funcionando como botón de inicio */}
+<Link to="/" className="shrink-0 transition-transform hover:scale-105 cursor-pointer">
+  <img 
+    alt="Colegios Trento Logo" 
+    className="h-10 md:h-12 w-auto" 
+    src={logoTrento} /* <-- Cambia el src por la variable sin comillas */
+  />
+</Link>
         
         {/* Enlaces del Medio (Desktop) */}
         <nav className="hidden md:flex items-center gap-8">
